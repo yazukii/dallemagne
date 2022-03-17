@@ -12,6 +12,39 @@ let swearLength = 0;
 
 let swearPercent = 0;
 
+let dick = [
+    "==",
+    "===",
+    "====",
+    "=====",
+    "======",
+    "=======",
+    "========",
+    "=========",
+    "==========",
+    "===========",
+    "============",
+    "=============",
+    "==============",
+    "===============",
+    "================",
+    "=================",
+    "==================",
+    "===================",
+    "====================",
+    "=====================",
+    "======================",
+    "=======================",
+    "========================",
+    "=========================",
+    "==========================",
+    "===========================",
+    "============================",
+    "=============================",
+    "==============================",
+    "==============================="
+]
+
 let swears = ["That's a bit too kitsch.", 
 "That's too manga for my taste.", 
 "You're talking too much, you should shut up.",
@@ -76,7 +109,24 @@ client.on('messageCreate', (message) =>{
         randomSwear(0, swearLength + 1)
 
         message.channel.sendTyping();
-        message.channel.send(`${swears[swearNum]}`);
+        message.channel.send(`dick` * 5);
+    } else if (message.content == 'dick length') {
+
+        swearCount = () => {
+            swearLength = swears.length
+            return swearLength
+        }
+        swearCount()
+
+        randomSwear = (min, max) => {
+            swearNum = Math.floor(Math.random() * (max - min) ) + min;
+            return swearNum
+        }
+    
+        randomSwear(0, swearLength + 1)
+
+        message.channel.sendTyping();
+        message.channel.send(`8${dick[swearNum]}D`);
     } else return
 });
 
