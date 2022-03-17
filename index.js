@@ -109,7 +109,7 @@ client.on('messageCreate', (message) =>{
         randomSwear(0, swearLength + 1)
 
         message.channel.sendTyping();
-        message.channel.send(`dick` * 5);
+        message.channel.send(`${swears[swearNum]}`);
     } else if (message.content == 'dick length') {
 
         swearCount = () => {
