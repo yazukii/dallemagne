@@ -130,4 +130,4 @@ client.on('messageCreate', (message) =>{
     } else return
 });
 
-client.login('OTUwMzIzNDI1NjU2ODU2NTc2.YiXPqA.Twjqlr_Y-wFGve31zvZ4Bw2sXCo');
+client.login('OTUwMzIzNDI1NjU2ODU2NTc2.YiXPqA.zXyqSzvCVbRW_cJq2_xSDYy3K3A');
